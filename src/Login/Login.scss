@@ -1,0 +1,125 @@
+$darkteal: #052d4b;
+.loginBackgrnd {
+  background-image: url("../Asets/52.jpeg");
+  background-size: cover;
+  min-height: 100vh;
+}
+.loginBackdrop {
+  background: rgba(0, 96, 151, 0.75);
+  min-height: 100vh;
+}
+.signUpNav {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1px;
+  width: 50%;
+  margin-left: 25%;
+  border: "none";
+  list-style-type: none;
+  a {
+    background: darken($color: #003c67, $amount: 20);
+    &:hover {
+      background: lighten($color: #003c67, $amount: 10);
+      cursor: pointer;
+    }
+  }
+}
+.heading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  color: white;
+  padding: 1em;
+  font-weight: 750;
+  text-align: center;
+  h1 {
+    font-size: 6vw;
+    z-index: -100;
+  }
+
+  h3 {
+    font-size: 5vw;
+    font-weight: bold;
+    z-index: -100;
+  }
+}
+// .particles {
+//   z-index: 100;
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
+.login {
+  -webkit-clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(9% 0, 100% 0, 100% 100%, 0% 100%);
+  background: $darkteal;
+  color: white;
+  min-height: 100vh;
+  padding: 5em;
+  margin-left: 65%;
+  text-align: center;
+}
+.inputLog {
+  padding: 1em;
+  width: 12.5em;
+  border: none;
+  border-bottom: 1px solid $darkteal;
+  &:focus {
+    background: lighten($color: $darkteal, $amount: 5);
+    color: white;
+  }
+}
+.loginBtn {
+  padding: 1em;
+  border: none;
+  width: 12.5em;
+  color: white;
+  font-weight: 700;
+  background: darken($color: #003c67, $amount: 20);
+  &:hover {
+    background: lighten($color: #003c67, $amount: 10);
+    cursor: pointer;
+  }
+}
+
+.fbBtn {
+  border: none;
+  background: #3b5998;
+  color: white;
+  width: 15em;
+  &:hover {
+    background: lighten($color: #3b5998, $amount: 10);
+    cursor: pointer;
+  }
+}
+
+.glBtn {
+  border: none;
+  background: #dd4b39;
+  color: white;
+  width: 15em;
+  &:hover {
+    background: lighten($color: #dd4b39, $amount: 10);
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 992px) {
+  .loginBackgrnd {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .heading {
+    width: 100%;
+    position: relative;
+  }
+  .particles {
+    display: none;
+  }
+  .login {
+    width: 100%;
+    margin-left: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}

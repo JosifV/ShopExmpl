@@ -1,0 +1,210 @@
+.navBar {
+  margin: 0;
+  padding-left: 0;
+  background: #333;
+  letter-spacing: 1.2px;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  li {
+    display: inline-flex;
+
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-weight: 300;
+      padding: 10px;
+    }
+    &:hover {
+      background: white;
+      cursor: pointer;
+      a {
+        color: #333;
+      }
+    }
+  }
+  .orders {
+    float: right;
+    border: none;
+    background: none;
+    color: white;
+    padding: 10px;
+    &:hover {
+      color: #333;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navBar {
+    margin: 0;
+    background: #333;
+    letter-spacing: 1.2px;
+    list-style-type: none;
+    overflow: hidden;
+    height: 45px;
+    transition: height 0.5s;
+    &:hover {
+      height: 256px;
+    }
+    li {
+      display: block;
+      padding: 10px;
+      a {
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        font-weight: 300;
+      }
+      &:hover {
+        background: white;
+        a {
+          color: #333;
+        }
+      }
+    }
+    .orders {
+      float: none;
+    }
+  }
+}
+.alertShipment {
+  margin: 40px 0 0 0 !important;
+  position: sticky;
+  top: 0;
+}
+.userInfoModal {
+  text-align: center;
+  width: 100%;
+  img {
+    border-radius: 100%;
+    margin-bottom: 10px;
+    height: 4em;
+    width: 4em;
+  }
+  h6 {
+    font-size: 120%;
+  }
+}
+.nonSoFar {
+  text-align: center;
+
+  font-size: 170%;
+  letter-spacing: 1.2px;
+  padding: 20px;
+  color: #333333;
+}
+.delBtn {
+  margin: 10px 0;
+  width: 100%;
+  background: lighten($color: #b22222, $amount: 20%);
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 550;
+  &:hover {
+    background: white;
+    color: #b22222;
+    border: 2px solid lighten($color: #b22222, $amount: 20%);
+    cursor: pointer;
+  }
+}
+.delBtnWish {
+  margin: 10px 0;
+  width: 100%;
+  background: lighten($color: #b22222, $amount: 20%);
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 550;
+  &:hover {
+    background: white;
+    color: #b22222;
+    border: 2px solid lighten($color: #b22222, $amount: 20%);
+    cursor: pointer;
+  }
+}
+.darkModal {
+  color: white;
+  margin: 0;
+  background: #333;
+  outline: 15px solid #333333;
+  width: 100%;
+  border: 25px solid #333333;
+  h4 {
+    padding: 5px;
+    font-size: 200%;
+  }
+}
+.darkModalWish {
+  color: white;
+  margin: 0;
+  background: #142952;
+  outline: 15px solid #142952;
+  width: 100%;
+  border: 25px solid #142952;
+  h4 {
+    padding: 5px;
+    font-size: 200%;
+  }
+}
+.modalForm {
+  input {
+    padding: 20px;
+    font-size: 120%;
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid white;
+    background: #333333;
+    color: white;
+    &:focus {
+      color: #333333;
+      border: 2px solid #333333;
+      background: white;
+    }
+  }
+}
+.darkModalBtns {
+  color: white;
+  background: #333;
+  outline: 15px solid #333333;
+  width: 100%;
+  border: 25px solid #333333;
+}
+.darkModalBtnsWish {
+  color: white;
+  background: #142952;
+  outline: 15px solid #142952;
+  width: 100%;
+  border: 25px solid #142952;
+}
+
+.modalFlex {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.modalFlex > li {
+  width: 200px;
+  border-radius: 15px;
+  padding: 10px;
+  color: #333333;
+  h2 {
+    letter-spacing: 1.2px;
+    font-weight: 300;
+    padding: 20px;
+  }
+  h4,
+  h5 {
+    letter-spacing: 1.2px;
+    font-weight: 300;
+    padding: 5px 20px;
+  }
+}

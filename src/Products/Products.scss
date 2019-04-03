@@ -1,0 +1,211 @@
+.prodJumbo {
+  h2,
+  p,
+  ul {
+    color: white;
+    letter-spacing: 1.2px;
+  }
+  h2 {
+    font-size: 550%;
+  }
+  p,
+  li {
+    font-size: 150%;
+  }
+  #iMonitoring {
+    font-size: 1650%;
+    color: white;
+    margin-left: 45%;
+  }
+}
+.subscribeBtn {
+  width: 50%;
+  background: #02a9b9;
+  color: white;
+  border: white;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 150%;
+  &:hover {
+    background: white;
+    color: #02a9b9;
+    cursor: pointer;
+  }
+}
+.productsGridLayout {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.productsGridLayout > div {
+  background-color: #f1f1f1;
+  box-shadow: 5px 5px 5px rgb(175, 175, 175);
+  width: 400px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+}
+.divImg img {
+  width: 400px;
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .productsGridLayout > div {
+    background-color: #f1f1f1;
+    box-shadow: 5px 5px 5px rgb(175, 175, 175);
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+  }
+  .divImg img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.prodStats {
+  background: #333333;
+  color: white;
+  padding: 10px;
+  li {
+    padding: 10px;
+    letter-spacing: 1.2px;
+  }
+}
+.magnifying-glass {
+  border: #333333;
+  box-shadow: 3px 3px 3px rgb(105, 105, 105);
+}
+$colors: #0c6ec0;
+// #ff3300, #0066ff, #00cc66, #800000, #666633, #660066
+$boja: nth($colors, random(length($colors)));
+// $boja: #ff3300;
+// $boja: #0066ff;
+
+.tooltipMaterial {
+  background: $boja;
+}
+.tooltipSize {
+  background: lighten($color: $boja, $amount: 5);
+}
+.tooltipDesigner {
+  background: lighten($color: $boja, $amount: 10);
+}
+.tooltipState {
+  background: darken($color: $boja, $amount: 7);
+}
+
+.tooltipMaterial,
+.tooltipSize,
+.tooltipDesigner,
+.tooltipState {
+  position: relative;
+  padding: 1em;
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 60%;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  &:hover {
+    cursor: pointer;
+    .tooltiptext {
+      visibility: visible;
+    }
+  }
+}
+
+// .tooltipSize {
+//   position: relative;
+//   .tooltiptext {
+//     visibility: hidden;
+//     width: 120px;
+//     background-color: black;
+//     color: #fff;
+//     text-align: center;
+//     border-radius: 6px;
+//     padding: 5px 0;
+//     font-size: 60%;
+
+//     /* Position the tooltip */
+//     position: absolute;
+//     z-index: 1;
+//     bottom: 100%;
+//     left: 50%;
+//     margin-left: -60px;
+//   }
+//   &:hover {
+//     cursor: pointer;
+//     .tooltiptext {
+//       visibility: visible;
+//     }
+//   }
+// }
+
+// .tooltipDesigner {
+//   position: relative;
+//   .tooltiptext {
+//     visibility: hidden;
+//     width: 120px;
+//     background-color: black;
+//     color: #fff;
+//     text-align: center;
+//     border-radius: 6px;
+//     padding: 5px 0;
+//     font-size: 60%;
+
+//     /* Position the tooltip */
+//     position: absolute;
+//     z-index: 1;
+//     bottom: 100%;
+//     left: 50%;
+//     margin-left: -60px;
+//   }
+//   &:hover {
+//     cursor: pointer;
+//     .tooltiptext {
+//       visibility: visible;
+//     }
+//   }
+// }
+// .tooltipState {
+//   position: relative;
+//   .tooltiptext {
+//     visibility: hidden;
+//     width: 120px;
+//     background-color: black;
+//     color: #fff;
+//     text-align: center;
+//     border-radius: 6px;
+//     padding: 5px 0;
+//     font-size: 60%;
+
+//     /* Position the tooltip */
+//     position: absolute;
+//     z-index: 1;
+//     bottom: 100%;
+//     left: 50%;
+//     margin-left: -60px;
+//   }
+//   &:hover {
+//     cursor: pointer;
+//     .tooltiptext {
+//       visibility: visible;
+//     }
+//   }
+// }

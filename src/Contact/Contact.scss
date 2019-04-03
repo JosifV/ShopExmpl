@@ -1,0 +1,97 @@
+.prodJumbo{
+    h2,h3,a, p{
+        color: white;
+        letter-spacing: 1.2px;
+    }
+    h2 {
+        font-size: 550%;
+    }
+    p{
+        font-size: 150%;
+    }
+    h3{
+        font-size: 170%;
+    }
+    a{
+        font-size: 130%;
+        font-weight: 800;
+        &:hover{
+            text-decoration: none;
+            color: #333333
+        }
+    }
+}
+
+.jumboSignIn{
+    width:50%;
+    background: #9ACD32;
+    color: white;
+    border: white;
+    border:3px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    font-size:160%;
+    font-weight: 800;
+    &:hover{
+        background: white;
+        border: 3px solid #9ACD32;
+        color:#9ACD32;
+        cursor: pointer;
+    }
+}
+.jumboForm{
+    ::placeholder {
+        color: white;
+        opacity: 1; /* Firefox */
+    }
+    margin-left:20%;
+    margin-right:20%;
+    input,button{
+        padding: 20px;
+        background: #9ACD32;
+        border: 3px solid white;
+        border-radius: 10px;
+        color:white;
+        font-size:160%;
+        font-weight: 800;
+    }
+    Input:focus{
+        background: white;
+        border: 3px solid #9ACD32;
+        color:rgb(71, 107, 0);
+    }
+    button:hover{
+        background: white;
+        border: 3px solid #9ACD32;
+        color:#9ACD32;
+        cursor: pointer;
+    }
+}
+.emailBtn{
+    width:75%;
+    padding: 20px;
+    background: #FF4500;
+    border: 3px solid white;
+    border-radius: 10px;
+    color:white;
+    font-size:160%;
+    font-weight: 800;
+    &:hover{
+        background: white;
+        border: 3px solid #FF4500;
+        color:#FF4500;
+        cursor: pointer;
+    }
+}
+.gridLinks{
+    display: flex;
+    flex-wrap: wrap;
+    a{
+        font-size:600%;
+        width: 33%;
+        color:white;
+        &:hover{
+            color:#333333;
+        }
+    }
+}
